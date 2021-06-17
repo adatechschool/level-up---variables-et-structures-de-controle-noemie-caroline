@@ -9,13 +9,17 @@
 <body>
     <p>Pour la recette de la carbonara à la française, nous avons besoin de 7 ingrédients.</p>
     <script>
+         
+    var ingredients = ["Pâtes\n", "Crème", "Oeuf", "Sel", "Poivre", "Lardons", "Oignon"];  
 
-var ingredients = ["Pâtes", "Crème", "Oeuf", "Sel", "Poivre", "Lardons", "Oignon"];
+        ingredients.sort();
+    for (i=0; i<ingredients.length; i++) {
 
-document.write(ingredients.join());
+        document.write((i+1) + ".\n" + ingredients[i],"<br>" );
+      
+    }
 
-
-
+   
 
 
 
